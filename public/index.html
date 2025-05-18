@@ -76,17 +76,17 @@
         </div>
         
         <div class="card">
-            <h2>Send Email to Ajit</h2>
-            <form id="ajitForm">
+            <h2>Send Email to sunain</h2>
+            <form id="sunainForm">
                 <div>
-                    <label for="ajitSubject">Subject:</label>
-                    <input type="text" id="ajitSubject" name="subject" required>
+                    <label for="sunainSubject">Subject:</label>
+                    <input type="text" id="sunainSubject" name="subject" required>
                 </div>
                 <div>
-                    <label for="ajitMessage">Message:</label>
-                    <textarea id="ajitMessage" name="message" required></textarea>
+                    <label for="sunainMessage">Message:</label>
+                    <textarea id="suaninMessage" name="message" required></textarea>
                 </div>
-                <button type="submit">Send to Ajit</button>
+                <button type="submit">Send to sunain</button>
             </form>
         </div>
         
@@ -106,12 +106,12 @@
             await sendNotification('/api/notify/email', { email, subject, message });
         });
 
-        document.getElementById('ajitForm').addEventListener('submit', async function(e) {
+        document.getElementById('sunainForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            const subject = document.getElementById('ajitSubject').value;
-            const message = document.getElementById('ajitMessage').value;
+            const subject = document.getElementById('suaninSubject').value;
+            const message = document.getElementById('sunainMessage').value;
             
-            await sendNotification('/api/notify/ajit', { subject, message });
+            await sendNotification('/api/notify/sunain', { subject, message });
         });
 
         async function sendNotification(endpoint, data) {
