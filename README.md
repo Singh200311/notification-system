@@ -3,7 +3,7 @@
 ### Features
 - Send Email, SMS (mocked), In-App notifications
 - REST API with two endpoints
-- Queue simulation and retry for email failures
+- Queue simulation and retry for email failure
 
 ### How to Run
 
